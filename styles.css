@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.calculator-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Glassmorphism background color */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: background-color 0.5s ease; /* Smooth color transition */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.result.obese {
+    background-color: #ba0606; /* Red for obese */
+}
+
+.result.overweight {
+    background-color: #b68207; /* Yellow for overweight */
+}
+
+.result.healthy {
+    background-color: #08a406; /* Green for healthy weight */
+}
+
+.result.underweight {
+    background-color: #b68207; /* Yellow for overweight */
+}
+
+.input_labels {
+    width: 100px;
+    text-align: center;
+    font-size: 11pt;
+    font-weight: 500;
+}
